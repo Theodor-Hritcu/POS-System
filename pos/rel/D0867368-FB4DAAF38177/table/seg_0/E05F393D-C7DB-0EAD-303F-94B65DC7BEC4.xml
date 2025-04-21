@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E05F393D-C7DB-0EAD-303F-94B65DC7BEC4" name="tax">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 19:13:00 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tax_id" id="9B7EC05D-F190-D517-5254-EEF24CEA263E">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 19:14:33 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rate" id="296B1E8E-7D8F-9B87-49E6-B95C93227A8D">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 19:14:33 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="29ECDBDF-BCC6-0410-AEB8-163142E24E4D">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 19:14:33 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="start_date" id="C7617E3A-24F4-DA6F-4396-3E6C6A9A627B">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 19:14:33 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="end_date" id="63CD76E2-545A-7389-1B14-6530F27648A9">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 19:14:33 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CCB76A50-1DAE-DFF1-BF96-8423E279443C" name="tax_PK">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 19:14:33 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9B7EC05D-F190-D517-5254-EEF24CEA263E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

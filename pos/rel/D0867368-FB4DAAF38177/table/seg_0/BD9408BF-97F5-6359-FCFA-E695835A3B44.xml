@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BD9408BF-97F5-6359-FCFA-E695835A3B44" name="inventory">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 19:01:10 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="inventory_id" id="0723AD5B-6334-A2C7-8FAC-B7A51234CC62">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 19:02:06 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stock_quantity" id="3BFAF163-81AF-5679-868A-1648C38CC76B">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 19:02:06 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="warehouse_loc" id="02EA22C2-D8A8-985A-96B2-23774C8EBD7D">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 19:02:06 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="product_product_id" id="B2CEE520-7F7B-DD89-838E-A7E45A635262">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 19:02:18 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B48E8464-379B-36A6-316D-8BC99224782D" referredColumn="8F934C8A-3186-1EBB-D6CE-E7EB9F896E58"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1818C5F6-EC46-0B2D-AEE3-B83FD1BC543A" name="inventory_PK">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 19:02:06 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0723AD5B-6334-A2C7-8FAC-B7A51234CC62"/>
+<colUsage columnID="3BFAF163-81AF-5679-868A-1648C38CC76B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BB712D1B-E9A4-58C6-3D88-AA093B0A78F2" name="product_idv1">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 19:02:18 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B2CEE520-7F7B-DD89-838E-A7E45A635262"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

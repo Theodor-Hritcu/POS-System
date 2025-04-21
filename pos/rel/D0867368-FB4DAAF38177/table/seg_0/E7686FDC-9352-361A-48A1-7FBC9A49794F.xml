@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E7686FDC-9352-361A-48A1-7FBC9A49794F" name="order_line_item">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 18:54:57 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="order_line_item_id" id="9E262D8C-1EF9-95E0-5425-B39CABA5F939">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 18:56:37 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantity" id="FDEA2635-58FE-CB79-3BC5-C4AC920B661C">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 18:56:37 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="unit_price" id="2C24643B-68B3-1FCD-3C9A-5F23349808E2">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 18:56:37 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="discount" id="FE2B943E-45AC-6B43-42B4-5FEF3022722A">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 18:56:37 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="order_order_id" id="28BADD8A-7375-F919-6E77-627B2F4C83FF">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 18:56:45 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DB537919-E8BF-4D04-1FF6-685FF9569C5A" referredColumn="51EB721F-632D-7B21-6D0D-687E4F7F5DF4"/>
+</associations>
+</Column>
+<Column name="product_product_id" id="52A501B0-44F8-CFE5-3FA6-864CB20DF6FD">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 18:57:05 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8441F2B9-6F4A-3A87-FEA3-855949AD95E1" referredColumn="8F934C8A-3186-1EBB-D6CE-E7EB9F896E58"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4EA746C1-65BC-8087-28CB-EEB2485DFE78" name="order_line_item_PK">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 18:56:37 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E262D8C-1EF9-95E0-5425-B39CABA5F939"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="009232B7-1C1E-98ED-4598-0E88420B80A3" name="order_id">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 18:56:45 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28BADD8A-7375-F919-6E77-627B2F4C83FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5AB4E4A7-D0AA-BF31-16DE-5CC602CA5D22" name="product_id">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 18:57:05 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="52A501B0-44F8-CFE5-3FA6-864CB20DF6FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

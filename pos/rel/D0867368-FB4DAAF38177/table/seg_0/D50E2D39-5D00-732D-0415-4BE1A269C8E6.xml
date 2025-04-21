@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D50E2D39-5D00-732D-0415-4BE1A269C8E6" name="transaction">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 19:07:06 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="transaction_id" id="3EF04E72-3BFA-C437-2AB3-CA2261950120">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 19:08:30 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="transaction_date" id="183AFF0A-2C73-1A49-79E0-4CB758CAD4B0">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 19:08:30 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT046</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total_amount" id="13C0935A-C95D-EDD8-4D41-CC5C37606A47">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 19:08:30 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="payment_method" id="5B1C435E-A962-2E07-8C0E-B11D3AA8F551">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 19:08:30 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="payment_status" id="0E78B193-C250-8305-E6F1-59F98872334E">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 19:25:40 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="order_order_id" id="3F56FD6C-8E67-4E8A-4E85-DBD657F4F0D8">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 19:08:39 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="81990581-FD10-8D52-9979-6CB5ADCEE97B" referredColumn="51EB721F-632D-7B21-6D0D-687E4F7F5DF4"/>
+</associations>
+</Column>
+<Column name="employee_user_id" id="BCDE426E-180B-2FD6-F7D2-ACF97B39F6C1">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 19:11:57 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EDC16114-6CE7-3A21-5225-C36086956BC9" referredColumn="660EF1D4-5279-AB05-8CE1-E6EE84C81DE7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E42F158B-82AF-9A9E-63A6-3CFF520B597F" name="transaction_PK">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 19:08:30 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3EF04E72-3BFA-C437-2AB3-CA2261950120"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="629D0C5F-6379-CBDC-2D15-C817DD575BDA" name="order_idv2">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 19:08:39 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F56FD6C-8E67-4E8A-4E85-DBD657F4F0D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="747826A2-D06C-4E57-B85F-D6EC4C9A44A7" name="user_id">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 19:11:57 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCDE426E-180B-2FD6-F7D2-ACF97B39F6C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

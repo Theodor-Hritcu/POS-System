@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A3711BE5-6430-B743-8335-045426C11BFB" name="category">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 18:41:22 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="category_id" id="7D692567-DBC1-54B5-99AE-F3B06E4D1E68">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 18:42:10 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="category_name" id="7FE3CD03-B66F-8942-1A53-40D42531280F">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 18:42:10 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="category_category_id" id="C06EF9AB-62B5-1B33-284D-28881E68C038">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-12 19:01:40 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="922F8AC0-CBAD-4408-6E59-D2C50DC88522" referredColumn="7D692567-DBC1-54B5-99AE-F3B06E4D1E68"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EA60FA75-89BF-CA33-E5E8-2743A1A9EF3C" name="category_PK">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 18:42:10 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D692567-DBC1-54B5-99AE-F3B06E4D1E68"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F86318F3-CB6C-CE23-6C0C-2BDB27282E0E" name="category_subcategory_FK">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-12 19:01:40 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C06EF9AB-62B5-1B33-284D-28881E68C038"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

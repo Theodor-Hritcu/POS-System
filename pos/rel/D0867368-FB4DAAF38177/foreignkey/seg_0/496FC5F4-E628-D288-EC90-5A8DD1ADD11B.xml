@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="496FC5F4-E628-D288-EC90-5A8DD1ADD11B" containerWithKeyObject="08E05937-9651-B121-C8CF-9959A0AB0679" localFKIndex="671F36A2-94F7-B0A2-F38A-16C920D0A0F0" name="tax_id">
+<createdBy>theo9</createdBy>
+<createdTime>2025-03-03 19:14:52 UTC</createdTime>
+<ownerDesignName>seminar3.1</ownerDesignName>
+<referredTableLongName>tax</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E05F393D-C7DB-0EAD-303F-94B65DC7BEC4</referredTableID>
+<keyObject>CCB76A50-1DAE-DFF1-BF96-8423E279443C</keyObject>
+<referredKeyID>CCB76A50-1DAE-DFF1-BF96-8423E279443C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>tax_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
